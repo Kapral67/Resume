@@ -24,3 +24,8 @@ jobs:
           build_html: true
           table_of_contents: false
           input_path: RESUME.md
+          output_dir: generated
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Resume
+          path: generated
