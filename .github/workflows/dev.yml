@@ -21,11 +21,12 @@ jobs:
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           build_pdf: true
-          build_html: true
+          build_html: false
           table_of_contents: false
           input_path: RESUME.md
-          output_dir: generated
+          output_dir: .
       - uses: actions/upload-artifact@v3
         with:
-          name: Resume
-          path: generated
+          name: pdf
+          path: RESUME.pdf
+          if-no-files-found: error
