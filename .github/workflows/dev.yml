@@ -24,7 +24,7 @@ jobs:
           build_html: false
           table_of_contents: false
           input_path: RESUME.md
-          output_dir: .
+          output_dir: /
       - uses: actions/upload-artifact@v3
         with:
           name: pdf
