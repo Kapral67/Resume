@@ -4,13 +4,9 @@ on:
   push:
     branches-ignore:
       - main
-    paths:
-      - RESUME.md
   pull_request:
     branches:
       - main
-    paths:
-      - RESUME.md
 
 jobs:
   convert:
