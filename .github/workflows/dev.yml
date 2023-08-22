@@ -16,13 +16,13 @@ jobs:
       - uses: actions/checkout@v3
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
-          build_pdf: true
-          build_html: false
+          build_pdf: false
+          build_html: true
           table_of_contents: false
           input_path: RESUME.md
           output_dir: /
       - uses: actions/upload-artifact@v3
         with:
-          name: pdf
-          path: RESUME.pdf
+          name: html
+          path: RESUME.html
           if-no-files-found: error

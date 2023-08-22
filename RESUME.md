@@ -1,4 +1,5 @@
 <div style="float:right">Want a PDF version? <a href="https://github.com/Kapral67/Resume/releases/latest/download/CSCI_mkapral_12-2023.pdf">Click Here!</a></div>
+
 ## Maxwell Kapral
 
 Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail@maxkapral.com)	GitHub: [Kapral67](https://github.com/Kapral67)
@@ -17,21 +18,13 @@ Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 <div style="float: right">May 2023 - August 2023</div><div style="font-weight: bold;">Software Development Intern</div>
 <div><i>Amazon, Seattle, WA</i></div>
 
-==[TODO]==
-
-> - Unit Testing
-> - Integration Testing
-> - Continuous (Canary) Testing
-> - Load Testing
+> - Unit, Regression, Load, & Continuous Testing
 > - Production CI/CD Workflows
 
 <div style="float: right">May 2022 - August 2022</div><div style="font-weight: bold;">Software Development Intern</div>
 <div><i>Amazon, Seattle, WA</i></div>
 
-==[TODO]==
-
-> - Scalable Systems (E-Mail Distribution)
-> - SaaS (E-Mail Distribution & Onboarding Custom E-Mail Templates)
+> - Scalable SaaS Application (E-Mail Distribution & Interface to Onboard Client E-Mail Templates)
 > - Pre-Production CI/CD Workflows
 
 ---
@@ -49,11 +42,7 @@ Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 
 #### Languages
 
-##### Database
-
 - MariaDB, Postgres, mySQL, AWS DynamoDB (NoSQL), SQLite
-
-##### Programming
 
 - C/C++, Java, Python, C#, Unix Shell (bash & zsh)
 
@@ -69,7 +58,7 @@ Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 
 ---
 
-## Project Highlights ==[TODO]==
+## Project Highlights
 
 > - DD-WRT Dual-WAN [Shell & BusyBox]
 > - Quantum Computing Research
