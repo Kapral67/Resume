@@ -1,7 +1,7 @@
 <div style="float:right">Want a PDF version? <a href="https://github.com/Kapral67/Resume/releases/latest/download/CSCI_mkapral_12-2023.pdf">Click Here!</a></div>
 ## Maxwell Kapral
 
-Cell: [(650)-868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail@maxkapral.com)	GitHub: [Kapral67](https://github.com/Kapral67)
+Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail@maxkapral.com)	GitHub: [Kapral67](https://github.com/Kapral67)
 
 ---
 
