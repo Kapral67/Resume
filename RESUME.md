@@ -23,14 +23,16 @@ Cell: [(650)-868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 > - Integration Testing
 > - Continuous (Canary) Testing
 > - Load Testing
+> - Production CI/CD Workflows
 
 <div style="float: right">May 2022 - August 2022</div><div style="font-weight: bold;">Software Development Intern</div>
 <div><i>Amazon, Seattle, WA</i></div>
 
 ==[TODO]==
 
-> - Scalable System (E-Mail Distribution)
-> - SaaS (E-Mail Distribution & Onboarding Application)
+> - Scalable Systems (E-Mail Distribution)
+> - SaaS (E-Mail Distribution & Onboarding Custom E-Mail Templates)
+> - Pre-Production CI/CD Workflows
 
 ---
 
