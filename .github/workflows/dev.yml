@@ -38,7 +38,7 @@ jobs:
         with:
           script: |
             try {
-              const { data } = await github.rest.repos.getReleaseByTag({
+              const { data } = github.rest.repos.getReleaseByTag({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 tag: "dev"
@@ -71,4 +71,4 @@ jobs:
           draft: false
           commit: ${{ env.branch }}
           tag: "dev"
-          makeLatest: true
+          makeLatest: false
