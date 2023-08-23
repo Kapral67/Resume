@@ -44,18 +44,11 @@ jobs:
                 repo: context.repo.repo,
                 tag: 'dev'
               });
-              console.log('Deleting release: ' + data.id);
-
-              /*
-
               await github.rest.repos.deleteRelease({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 release_id: data.id
               });
-
-              */
-
             } catch (e) {
               console.log(e);
             }
