@@ -90,7 +90,7 @@ jobs:
                 name: tag,
                 body: 'Latest Public Release',
                 draft: true,
-                prerelease: true // FIXME: Change to `prerelease: false` when ready to publish
+                prerelease: false
               });
               const fs = require('fs');
               const path = require('path');
