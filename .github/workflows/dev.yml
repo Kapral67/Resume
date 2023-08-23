@@ -38,12 +38,12 @@ jobs:
         with:
           script: |
             try {
-              const { data } = github.rest.repos.getReleaseByTag({
+              const { data } = await github.rest.repos.getReleaseByTag({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 tag: "dev"
               });
-              github.rest.repos.deleteRelease({
+              await github.rest.repos.deleteRelease({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 release_id: data.id
@@ -52,7 +52,7 @@ jobs:
               console.log(e);
             }
             try {
-              github.rest.git.deleteRef({
+              await github.rest.git.deleteRef({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 ref: "tags/dev"
