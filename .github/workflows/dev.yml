@@ -39,7 +39,7 @@ jobs:
         with:
           script: |
             try {
-              const data = await github.rest.repos.getReleaseByTag({
+              const { data } = await github.rest.repos.getReleaseByTag({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 tag: 'dev'
