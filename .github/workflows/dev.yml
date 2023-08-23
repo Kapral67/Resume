@@ -60,15 +60,15 @@ jobs:
             } catch (e) {
               console.log(e);
             }
-      - id: branch
-        run: |
-            echo branch=$(git branch --show-current) >> $GITHUB_ENV
-      - uses: ncipollo/release-action@v1
-        with:
-          allowUpdates: false
-          artifacts: "RESUME.pdf,RESUME.html"
-          prerelease: true
-          draft: false
-          commit: ${{ env.branch }}
-          tag: "dev"
-          makeLatest: false
+      # - id: branch
+      #   run: |
+      #       echo branch=$(git branch --show-current) >> $GITHUB_ENV
+      # - uses: ncipollo/release-action@v1
+      #   with:
+      #     allowUpdates: false
+      #     artifacts: "RESUME.pdf,RESUME.html"
+      #     prerelease: true
+      #     draft: false
+      #     commit: ${{ env.branch }}
+      #     tag: "dev"
+      #     makeLatest: false
