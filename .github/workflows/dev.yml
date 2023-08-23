@@ -60,7 +60,7 @@ jobs:
             echo branch=$(git branch --show-current) >> $GITHUB_ENV
       - uses: ncipollo/release-action@v1
         with:
-          artifacts: html,pdf
+          artifacts: "RESUME.pdf,RESUME.html"
           prerelease: true
           commit: ${{ env.branch }}
           tag: "dev"
