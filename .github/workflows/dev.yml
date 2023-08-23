@@ -71,4 +71,4 @@ jobs:
           draft: false
           commit: ${{ env.branch }}
           tag: "dev"
-          makeLatest: false
+          makeLatest: true
