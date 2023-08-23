@@ -88,8 +88,8 @@ jobs:
                 prerelease: true
               });
 
-              console.log('release.data.id = ' + release.data.id);
               console.log('release.id = ' + release.id);
+              console.log('release.data.id = ' + release.data.id);
 
               /*
 
