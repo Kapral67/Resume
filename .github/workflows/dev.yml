@@ -47,6 +47,10 @@ jobs:
                 repo: context.repo.repo,
                 release_id: data.id
               });
+            } catch (e) {
+              console.log(e);
+            }
+            try {
               github.rest.git.deleteRef({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
