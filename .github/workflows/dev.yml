@@ -52,9 +52,6 @@ jobs:
             } catch (e) {
               console.log(e);
             }
-
-            /*
-
             try {
               await github.rest.git.deleteRef({
                 owner: context.repo.owner,
@@ -64,67 +61,73 @@ jobs:
             } catch (e) {
               console.log(e);
             }
+      - uses: actions/github-script@v6
+        name: Create New Release
+        with:
+          script: |
+            const tag = 'dev';
+            const commit = context.sha;
+            try {
+              await github.rest.git.createRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: `refs/tags/${tag}`,
+                sha: commit
+              });
+            } catch (e) {
+              console.log(e);
+            }
+            try {
+              const { release } = await github.rest.repos.createRelease({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                tag_name: tag,
+                name: tag,
+                body: 'Latest Development Release',
+                draft: false,
+                prerelease: true
+              });
 
-            */
+              console.log('release.data.id = ' + release.data.id);
+              console.log('release.id = ' + release.id);
 
-      # - uses: actions/github-script@v6
-      #   name: Create New Release
-      #   with:
-      #     script: |
-      #       const tag = 'dev';
-      #       const commit = context.sha;
-      #       try {
-      #         await github.rest.git.createRef({
-      #           owner: context.repo.owner,
-      #           repo: context.repo.repo,
-      #           ref: `refs/tags/${tag}`,
-      #           sha: commit
-      #         });
-      #       } catch (e) {
-      #         console.log(e);
-      #       }
-      #       try {
-      #         const release = await github.rest.repos.createRelease({
-      #           owner: context.repo.owner,
-      #           repo: context.repo.repo,
-      #           tag_name: tag,
-      #           name: tag,
-      #           body: 'Latest Development Release',
-      #           draft: false,
-      #           prerelease: true
-      #         });
-      #         const fs = require('fs');
-      #         const path = require('path');
-      #         const pdf = fs.readFileSync(path.basename('./RESUME.pdf'));
-      #         await github.rest.repos.uploadReleaseAsset({
-      #           owner: context.repo.owner,
-      #           repo: context.repo.repo,
-      #           release_id: release.data.id,
-      #           name: 'RESUME.pdf',
-      #           data: pdf,
-      #           headers: {
-      #             'content-length': pdf.length,
-      #             'content-type': 'application/pdf'
-      #           }
-      #         });
-      #         const html = fs.readFileSync(path.basename('./RESUME.html'));
-      #         await github.rest.repos.uploadReleaseAsset({
-      #           owner: context.repo.owner,
-      #           repo: context.repo.repo,
-      #           release_id: release.data.id,
-      #           name: 'RESUME.html',
-      #           data: html,
-      #           headers: {
-      #             'content-length': html.length,
-      #             'content-type': 'text/html'
-      #           }
-      #         });
-      #         await github.rest.repos.updateRelease({
-      #           owner: context.repo.owner,
-      #           repo: context.repo.repo,
-      #           release_id: release.data.id,
-      #           draft: false
-      #         });
-      #       } catch (e) {
-      #         console.log(e);
-      #       }
+              /*
+
+              const fs = require('fs');
+              const path = require('path');
+              const pdf = fs.readFileSync(path.basename('./RESUME.pdf'));
+              await github.rest.repos.uploadReleaseAsset({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: release.data.id,
+                name: 'RESUME.pdf',
+                data: pdf,
+                headers: {
+                  'content-length': pdf.length,
+                  'content-type': 'application/pdf'
+                }
+              });
+              const html = fs.readFileSync(path.basename('./RESUME.html'));
+              await github.rest.repos.uploadReleaseAsset({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: release.data.id,
+                name: 'RESUME.html',
+                data: html,
+                headers: {
+                  'content-length': html.length,
+                  'content-type': 'text/html'
+                }
+              });
+              await github.rest.repos.updateRelease({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: release.data.id,
+                draft: false
+              });
+
+              */
+
+            } catch (e) {
+              console.log(e);
+            }
