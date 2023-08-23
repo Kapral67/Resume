@@ -1,10 +1,7 @@
-name: Development Approval Workflow
+name: Public Release Workflow
 
 on:
   push:
-    branches-ignore:
-      - main
-  pull_request:
     branches:
       - main
 
@@ -16,6 +13,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.TOKEN }}
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           build_pdf: true
@@ -42,7 +41,7 @@ jobs:
               const { data } = await github.rest.repos.getReleaseByTag({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                tag: 'dev'
+                tag: 'latest'
               });
               await github.rest.repos.deleteRelease({
                 owner: context.repo.owner,
@@ -56,16 +55,20 @@ jobs:
               await github.rest.git.deleteRef({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                ref: 'tags/dev'
+                ref: 'tags/latest'
               });
             } catch (e) {
               console.log(e);
             }
+      - name: Rename Files
+        run: |
+          mv RESUME.html index.html
+          mv RESUME.pdf CSCI_mkapral_12-2023.pdf
       - uses: actions/github-script@v6
         name: Create New Release
         with:
           script: |
-            const tag = 'dev';
+            const tag = 'latest';
             const commit = context.sha;
             try {
               await github.rest.git.createRef({
@@ -84,36 +87,23 @@ jobs:
                 repo: context.repo.repo,
                 tag_name: tag,
                 name: tag,
-                body: 'Latest Development Release',
+                body: 'Latest Public Release',
                 draft: true,
-                prerelease: true
+                prerelease: true // FIXME: Change to `prerelease: false` when ready to publish
               });
               const fs = require('fs');
               const path = require('path');
-              const pdfFileName = 'RESUME.pdf';
-              const pdf = fs.readFileSync(path.basename(`./${pdfFileName}`));
+              const filename = 'CSCI_mkapral_12-2023.pdf'
+              const pdf = fs.readFileSync(path.basename(`./${filename}`));
               await github.rest.repos.uploadReleaseAsset({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 release_id: release.data.id,
-                name: pdfFileName,
+                name: filename,
                 data: pdf,
                 headers: {
                   'content-length': pdf.length,
                   'content-type': 'application/pdf'
-                }
-              });
-              const htmlFileName = 'RESUME.html';
-              const html = fs.readFileSync(path.basename(`./${htmlFileName}`));
-              await github.rest.repos.uploadReleaseAsset({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                release_id: release.data.id,
-                name: htmlFileName,
-                data: html,
-                headers: {
-                  'content-length': html.length,
-                  'content-type': 'text/html'
                 }
               });
               await github.rest.repos.updateRelease({
@@ -126,3 +116,12 @@ jobs:
               console.log(e);
               throw e;
             }
+      - uses: actions/github-script@v6
+        name: Force Commit HTML
+        with:
+          script: |
+            git config --local user.name "Kapral67"
+            git config --local user.email "git@maxkapral.com"
+            git add index.html
+            git commit --amend --no-edit
+            git push -f
