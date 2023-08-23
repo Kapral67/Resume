@@ -62,6 +62,7 @@ jobs:
         with:
           artifacts: "RESUME.pdf,RESUME.html"
           prerelease: true
+          draft: false
           commit: ${{ env.branch }}
           tag: "dev"
           makeLatest: false
