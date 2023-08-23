@@ -73,8 +73,6 @@ jobs:
               ref: `refs/tags/${tag}`,
               sha: commit
             });
-            const fs = require('fs');
-            const path = require('path');
             const release = await github.rest.repos.createRelease({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -84,13 +82,15 @@ jobs:
               draft: true,
               prerelease: true
             });
+            const fs = require('fs');
+            const path = require('path');
             const pdf = fs.readFileSync(path.basename('./RESUME.pdf'));
             await github.rest.repos.uploadReleaseAsset({
               owner: context.repo.owner,
               repo: context.repo.repo,
               release_id: release.data.id,
               name: 'RESUME.pdf',
-              data: pdf
+              data: pdf,
               headers: {
                 'content-length': pdf.length,
                 'content-type': 'application/pdf'
@@ -102,7 +102,7 @@ jobs:
               repo: context.repo.repo,
               release_id: release.data.id,
               name: 'RESUME.html',
-              data: html
+              data: html,
               headers: {
                 'content-length': html.length,
                 'content-type': 'text/html'
@@ -114,17 +114,3 @@ jobs:
               release_id: release.data.id,
               draft: false
             });
-
-
-      # - id: branch
-      #   run: |
-      #       echo branch=$(git branch --show-current) >> $GITHUB_ENV
-      # - uses: ncipollo/release-action@v1
-      #   with:
-      #     allowUpdates: false
-      #     artifacts: "RESUME.pdf,RESUME.html"
-      #     prerelease: true
-      #     draft: false
-      #     commit: ${{ env.branch }}
-      #     tag: "dev"
-      #     makeLatest: false
