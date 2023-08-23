@@ -12,11 +12,13 @@ jobs:
   convert:
     name: Build HTML & PDF Resume Files
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
-          build_pdf: false
+          build_pdf: true
           build_html: true
           table_of_contents: false
           input_path: RESUME.md
@@ -26,3 +28,40 @@ jobs:
           name: html
           path: RESUME.html
           if-no-files-found: error
+      - uses: actions/upload-artifact@v3
+        with:
+          name: pdf
+          path: RESUME.pdf
+          if-no-files-found: error
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            try {
+              const { data } = await github.rest.repos.getReleaseByTag({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                tag: "dev"
+              });
+              github.rest.repos.deleteRelease({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: data.id
+              });
+              github.rest.git.deleteRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: "tags/dev"
+              });
+            } catch (e) {
+              console.log(e);
+            }
+      - id: branch
+        run: |
+            echo branch=$(git branch --show-current) >> $GITHUB_ENV
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: html,pdf
+          prerelease: true
+          commit: ${{ env.branch }}
+          tag: "dev"
+          makeLatest: false
