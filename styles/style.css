@@ -15,3 +15,9 @@ table th {
 table {
   border-collapse: separate;
 }
+
+/* Remove Excess Margin Top */
+
+body {
+  margin: auto;
+}

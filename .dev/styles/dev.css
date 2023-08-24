@@ -30,3 +30,7 @@ table th {
 table {
   border-collapse: separate;
 }
+
+body {
+  margin: auto;
+}
