@@ -1010,6 +1010,29 @@ pre code {
   margin: 0 0.2em 0.25em -1.6em;
   vertical-align: middle;
 }
+/* Makeshift Columns */
+
+td,
+th {
+  padding: 0;
+  vertical-align: top;
+}
+
+table td,
+table th {
+  padding: 0;
+  border: 0;
+}
+
+table {
+  border-collapse: separate;
+}
+
+/* Remove Excess Margin Top */
+
+body {
+  margin: auto;
+}
 /*
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 */
@@ -1132,42 +1155,49 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 </blockquote>
 <hr>
-<h3 id="proficient-skills" tabindex="-1"><a class="anchor" href="#proficient-skills" aria-hidden="true"><span class="octicon octicon-link"></span></a> Proficient Skills</h3>
-<h4 id="operating-systems" tabindex="-1"><a class="anchor" href="#operating-systems" aria-hidden="true"><span class="octicon octicon-link"></span></a> Operating Systems</h4>
-<ul>
-<li>Linux systems: RHEL, Arch, &amp; Debian Based; BusyBox</li>
-<li>Other systems: macOS</li>
-</ul>
-<h4 id="development-tools" tabindex="-1"><a class="anchor" href="#development-tools" aria-hidden="true"><span class="octicon octicon-link"></span></a> Development Tools</h4>
-<ul>
-<li>Docker, Git, AWS (CDK &amp; SDK), Django, .NET (Microsoft Blazor)</li>
-</ul>
-<h4 id="languages" tabindex="-1"><a class="anchor" href="#languages" aria-hidden="true"><span class="octicon octicon-link"></span></a> Languages</h4>
-<ul>
-<li>
-<p>MariaDB, Postgres, mySQL, AWS DynamoDB (NoSQL), SQLite</p>
-</li>
-<li>
-<p>C/C++, Java, Python, C#, Unix Shell (bash &amp; zsh)</p>
-</li>
-</ul>
-<h3 id="fields-of-interest" tabindex="-1"><a class="anchor" href="#fields-of-interest" aria-hidden="true"><span class="octicon octicon-link"></span></a> Fields of Interest</h3>
-<ul>
-<li>
-<p>Cloud Computing</p>
-</li>
-<li>
-<p>Computer Networking</p>
-</li>
-<li>
-<p>Quantum Computing</p>
-</li>
-<li>
-<p>Containerized/Sandboxed Computing</p>
-</li>
-</ul>
+<table>
+  <tbody><tr>
+    <td>
+      <h3>Proficient Skills</h3>
+      <ul>
+        <li>
+          <b>Development Tools</b>: Docker, Git, Django
+        </li>
+        <li>
+          <b>AWS Tools</b>: CloudFormation, CloudWatch, DynamoDB, EventBridge, Lambda, S3
+        </li>
+        <li>
+          <b>.NET Tools</b>: Blazor WebAssembly
+        </li>
+        <li>
+          <b>Database Languages/Frameworks</b>: MariaDB, Postgres, mySQL, AWS DynamoDB (NoSQL), SQLite
+        </li>
+        <li>
+          <b>Programming Languages</b>: C/C++, Java, Python, C#, Unix Shell (sh, ash, bash, zsh)
+        </li>
+      </ul>
+    </td>
+    <td>
+      <h3>Fields of Interest</h3>
+      <ul>
+        <li>
+          <b>Cloud Computing</b>
+        </li>
+        <li>
+          <b>Computer Networking</b>
+        </li>
+        <li>
+          <b>Quantum Computing</b>
+        </li>
+        <li>
+          <b>Containerized/Sandboxed Computing</b>
+        </li>
+      </ul>
+    </td>
+  </tr>
+</tbody></table>
 <hr>
-<h2 id="project-highlights" tabindex="-1"><a class="anchor" href="#project-highlights" aria-hidden="true"><span class="octicon octicon-link"></span></a> Project Highlights</h2>
+<h3>Projects <span style="background-color: yellow;">[Incomplete Section]</span></h3>
 <blockquote>
 <ul>
 <li>DD-WRT Dual-WAN [Shell &amp; BusyBox]</li>
