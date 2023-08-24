@@ -29,29 +29,51 @@ Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 
 ---
 
-### Proficient Skills
-
-- **Operating Systems**: RHEL, Arch, & Debian Based; BusyBox; macOS
-
-- **Development Tools**: Docker, Git, Django
-
-- **AWS Tools**: CloudFormation, CloudWatch, DynamoDB, EventBridge, Lambda, S3
-
-- **.NET Tools**: Blazor WebAssembly
-
-- **Database Languages/Frameworks**: MariaDB, Postgres, mySQL, AWS DynamoDB (NoSQL), SQLite
-
-- **Programming Languages**: C/C++, Java, Python, C#, Unix Shell (sh, ash, bash, zsh)
-
-### Fields of Interest
-
-| | | | |
-|-|-|-|-|
-|Cloud Computing|Computer Networking|Quantum Computing|Containerized/Sandboxed Computing|
+<table>
+  <tr>
+    <td>
+      <h3>Proficient Skills</h3>
+      <ul>
+        <li>
+          <b>Development Tools</b>: Docker, Git, Django
+        </li>
+        <li>
+          <b>AWS Tools</b>: CloudFormation, CloudWatch, DynamoDB, EventBridge, Lambda, S3
+        </li>
+        <li>
+          <b>.NET Tools</b>: Blazor WebAssembly
+        </li>
+        <li>
+          <b>Database Languages/Frameworks</b>: MariaDB, Postgres, mySQL, AWS DynamoDB (NoSQL), SQLite
+        </li>
+        <li>
+          <b>Programming Languages</b>: C/C++, Java, Python, C#, Unix Shell (sh, ash, bash, zsh)
+        </li>
+      </ul>
+    </td>
+    <td>
+      <h3>Fields of Interest</h3>
+      <ul>
+        <li>
+          <b>Cloud Computing</b>
+        </li>
+        <li>
+          <b>Computer Networking</b>
+        </li>
+        <li>
+          <b>Quantum Computing</b>
+        </li>
+        <li>
+          <b>Containerized/Sandboxed Computing</b>
+        </li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ---
 
-### Project Links
+<h3>Projects <span style="background-color: yellow;">[Incomplete Section]</span></h3>
 
 > - DD-WRT Dual-WAN [Shell & BusyBox]
 > - Quantum Computing Research
