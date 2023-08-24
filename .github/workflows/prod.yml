@@ -13,22 +13,40 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Package Management
+        run: |
+          DEBIAN_FRONTEND=noninteractive sudo apt-get -y --no-install-recommends install \
+            sed
       - uses: actions/checkout@v3
         with:
           token: ${{ secrets.TOKEN }}
       - uses: baileyjm02/markdown-to-pdf@v1
+        name: Convert Resume to HTML
         with:
-          build_pdf: true
+          build_pdf: false
           build_html: true
           table_of_contents: false
           input_path: RESUME.md
           output_dir: /
       - uses: actions/upload-artifact@v3
+        name: Upload HTML Artifact
         with:
           name: html
           path: RESUME.html
           if-no-files-found: error
+      - name: Custom PDF Header
+        run: |
+          sed -i '1s|.*|<div style="float:right">Checkout Links and Updates at <a href="https://www.maxkapral.com">maxkapral.com</a></div>|' RESUME.md
+      - uses: baileyjm02/markdown-to-pdf@v1
+        name: Convert RESUME to PDF
+        with:
+          build_pdf: true
+          build_html: false
+          table_of_contents: false
+          input_path: RESUME.md
+          output_dir: /
       - uses: actions/upload-artifact@v3
+        name: Upload PDF Artifact
         with:
           name: pdf
           path: RESUME.pdf
@@ -121,6 +139,6 @@ jobs:
         run: |
           git config --local user.name "actions[bot]"
           git config --local user.email "<>"
-          git add index.html
-          git commit -m "[bot] Auto-Commit Generated HTML Resume"
+          git add index.html && \
+          git commit -m "[bot] Auto-Commit Generated HTML Resume" && \
           git push -f
