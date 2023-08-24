@@ -26,6 +26,9 @@ jobs:
           build_pdf: false
           build_html: true
           table_of_contents: false
+          template: .dev/templates/dev.html
+          theme: .dev/styles/dev.css
+          extend_default_theme: true
           input_path: RESUME.md
           output_dir: /
       - uses: actions/upload-artifact@v3
@@ -43,6 +46,9 @@ jobs:
           build_pdf: true
           build_html: false
           table_of_contents: false
+          template: .dev/templates/dev.html
+          theme: .dev/styles/dev.css
+          extend_default_theme: true
           input_path: RESUME.md
           output_dir: /
       - uses: actions/upload-artifact@v3

@@ -1,0 +1,16 @@
+/* DRAFT WATERMARK */
+
+#watermark {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  font-size: 13em;
+  /* Adjust according to your preference */
+  transform: translate(-50%, -50%) rotate(-45deg);
+  color: rgba(155, 155, 155, 0.45);
+  /* Adjust opacity here */
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+}
