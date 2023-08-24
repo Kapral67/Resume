@@ -23,6 +23,10 @@ th {
 
 table td,
 table th {
-  padding: none;
-  border: none;
+  padding: 0;
+  border: 0;
+}
+
+table {
+  border-collapse: separate;
 }
