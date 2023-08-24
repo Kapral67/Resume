@@ -31,34 +31,27 @@ Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 
 ### Proficient Skills
 
-#### Operating Systems
+- **Operating Systems**: RHEL, Arch, & Debian Based; BusyBox; macOS
 
-- Linux systems: RHEL, Arch, & Debian Based; BusyBox
-- Other systems: macOS
+- **Development Tools**: Docker, Git, Django
 
-#### Development Tools
+- **AWS Tools**: CloudFormation, CloudWatch, DynamoDB, EventBridge, Lambda, S3
 
-- Docker, Git, AWS (CDK & SDK), Django, .NET (Microsoft Blazor)
+- **.NET Tools**: Blazor WebAssembly
 
-#### Languages
+- **Database Languages/Frameworks**: MariaDB, Postgres, mySQL, AWS DynamoDB (NoSQL), SQLite
 
-- MariaDB, Postgres, mySQL, AWS DynamoDB (NoSQL), SQLite
-
-- C/C++, Java, Python, C#, Unix Shell (bash & zsh)
+- **Programming Languages**: C/C++, Java, Python, C#, Unix Shell (sh, ash, bash, zsh)
 
 ### Fields of Interest
 
-- Cloud Computing
-
-- Computer Networking
-
-- Quantum Computing
-
-- Containerized/Sandboxed Computing
+| | | | |
+|-|-|-|-|
+|Cloud Computing|Computer Networking|Quantum Computing|Containerized/Sandboxed Computing|
 
 ---
 
-## Project Highlights
+### Project Links
 
 > - DD-WRT Dual-WAN [Shell & BusyBox]
 > - Quantum Computing Research
