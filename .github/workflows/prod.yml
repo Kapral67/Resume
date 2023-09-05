@@ -17,7 +17,7 @@ jobs:
         run: |
           DEBIAN_FRONTEND=noninteractive sudo apt-get -y --no-install-recommends install \
             sed
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.TOKEN }}
       - uses: baileyjm02/markdown-to-pdf@v1
