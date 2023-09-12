@@ -15,21 +15,7 @@
   width: 100%;
 }
 
-td,
-th {
-  padding: 0;
-  vertical-align: top;
-}
-
-table td,
-table th {
-  padding: 0;
-  border: 0;
-}
-
-table {
-  border-collapse: separate;
-}
+/* REMOVE EXCESS TOP MARGIN */
 
 body {
   margin: auto;

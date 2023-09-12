@@ -11,6 +11,14 @@ Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 <div style="float:right;">Graduate Dec. 2023</div><div style="font-weight:bold;">B.S. Computer Science - 3.8 GPA</div>
 <div><i>California State University, Chico</i></div>
 
+#### Class Highlight
+
+<button style="float: right"><a href="https://onedrive.live.com/embed?resid=85BBBF9C16370EA0%21210921&authkey=!ACP12EBabgNUUA0">Download Source</a></button><div style="font-weight: bold;">Numerical & Parallel Programming Project</div>
+
+- Designed and wrote a custom parallel/numerical program to detect [strange attractors](https://en.wikipedia.org/wiki/Attractor#Strange_attractor) from random initial conditions based on the [Lorenz attractor](https://en.wikipedia.org/wiki/Lorenz_system)
+
+- Program was parallelized using a hybrid model of both [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) and [OpenMP](https://en.wikipedia.org/wiki/OpenMP)
+
 ---
 
 ### Work Experience
@@ -21,6 +29,12 @@ Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 > - Unit, Regression, Load, & Continuous Testing
 > - Production CI/CD Workflows
 
+<div style="float: right">August 2022 - December 2022</div><div style="font-weight: bold;">TA & Tutor</div>
+<div><i>CSU, Chico, CA</i></div>
+
+> - Assisted students' understanding of core computer science concepts
+> - Assisted professor with their lab sections for core classes
+
 <div style="float: right">May 2022 - August 2022</div><div style="font-weight: bold;">Software Development Intern</div>
 <div><i>Amazon, Seattle, WA</i></div>
 
@@ -29,53 +43,14 @@ Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 
 ---
 
-<table>
-  <tr>
-    <td>
-      <h3>Proficient Skills</h3>
-      <ul>
-        <li>
-          <b>Development Tools</b>: Docker, Git, Django
-        </li>
-        <li>
-          <b>AWS Tools</b>: CloudFormation, CloudWatch, DynamoDB, EventBridge, Lambda, S3
-        </li>
-        <li>
-          <b>.NET Tools</b>: Blazor WebAssembly
-        </li>
-        <li>
-          <b>Database Languages/Frameworks</b>: MariaDB, Postgres, mySQL, AWS DynamoDB (NoSQL), SQLite
-        </li>
-        <li>
-          <b>Programming Languages</b>: C/C++, Java, Python, C#, Unix Shell (sh, ash, bash, zsh)
-        </li>
-      </ul>
-    </td>
-    <td>
-      <h3>Fields of Interest</h3>
-      <ul>
-        <li>
-          <b>Cloud Computing</b>
-        </li>
-        <li>
-          <b>Computer Networking</b>
-        </li>
-        <li>
-          <b>Quantum Computing</b>
-        </li>
-        <li>
-          <b>Containerized/Sandboxed Computing</b>
-        </li>
-      </ul>
-    </td>
-  </tr>
-</table>
+### Familiar Topics
 
----
+- **Development Tools**: Docker, Git, Django
 
-<h3>Projects <span style="background-color: yellow;">[Incomplete Section]</span></h3>
+- **AWS Tools**: CloudFormation, CloudWatch, DynamoDB, EventBridge, Lambda, S3
 
-> - DD-WRT Dual-WAN [Shell & BusyBox]
-> - Quantum Computing Research
-> - Parallel Programming Project
-> - FamilyDirectory Project
+- **.NET Tools**: Blazor WebAssembly
+
+- **Database Languages/Frameworks**: OpenMP, MPI, MariaDB, Postgres, mySQL, AWS DynamoDB (NoSQL), SQLite
+
+- **Programming Languages**: C/C++, Java, Python, C#, Unix Shell (sh, ash, bash, zsh)
