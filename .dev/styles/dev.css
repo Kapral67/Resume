@@ -20,3 +20,17 @@
 body {
   margin: auto;
 }
+
+/* HIDE CERTAIN DIVS FROM PDF */
+
+@media print {
+  body {
+    min-width: initial;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .online-only {
+    display: none;
+  }
+}

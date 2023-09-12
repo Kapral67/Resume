@@ -11,13 +11,12 @@ Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 <div style="float:right;">Graduate Dec. 2023</div><div style="font-weight:bold;">B.S. Computer Science - 3.8 GPA</div>
 <div><i>California State University, Chico</i></div>
 
-#### Class Highlight
+<br>
 
-<button style="float: right"><a href="https://onedrive.live.com/embed?resid=85BBBF9C16370EA0%21210921&authkey=!ACP12EBabgNUUA0">Download Source</a></button><div style="font-weight: bold;">Numerical & Parallel Programming Project</div>
+<div class="online-only" style="float: right"><a href="https://github.com/Kapral67/Resume/releases/download/lorenzian/lorenzian.tar.gz">Download Source</a></div><div style="font-weight: bold;">Numerical & Parallel Programming Project</div>
 
-- Designed and wrote a custom parallel/numerical program to detect [strange attractors](https://en.wikipedia.org/wiki/Attractor#Strange_attractor) from random initial conditions based on the [Lorenz attractor](https://en.wikipedia.org/wiki/Lorenz_system)
-
-- Program was parallelized using a hybrid model of both [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) and [OpenMP](https://en.wikipedia.org/wiki/OpenMP)
+> - Designed and wrote a custom parallel/numerical program to detect [strange attractors](https://en.wikipedia.org/wiki/Attractor#Strange_attractor) from random initial conditions based on the [Lorenz attractor](https://en.wikipedia.org/wiki/Lorenz_system)
+> - Program was parallelized using a hybrid model of both [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) and [OpenMP](https://en.wikipedia.org/wiki/OpenMP)
 
 ---
 
