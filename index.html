@@ -1010,28 +1010,24 @@ pre code {
   margin: 0 0.2em 0.25em -1.6em;
   vertical-align: middle;
 }
-/* Makeshift Columns */
-
-td,
-th {
-  padding: 0;
-  vertical-align: top;
-}
-
-table td,
-table th {
-  padding: 0;
-  border: 0;
-}
-
-table {
-  border-collapse: separate;
-}
-
 /* Remove Excess Margin Top */
 
 body {
   margin: auto;
+}
+
+/* HIDE CERTAIN DIVS FROM PDF */
+
+@media print {
+  body {
+    min-width: initial;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .online-only {
+    display: none;
+  }
 }
 /*
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
