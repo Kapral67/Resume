@@ -42,7 +42,7 @@ Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 
 ---
 
-### Familiar Topics
+### Proficient Skills
 
 - **Development Tools**: Docker, Git, Django
 
