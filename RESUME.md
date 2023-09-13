@@ -8,7 +8,7 @@ Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 
 ### Education
 
-<div style="float:right;">Graduate Dec. 2023</div><div style="font-weight:bold;">B.S. Computer Science - 3.8 GPA</div>
+<div style="float:right;">Graduate December 2023</div><div style="font-weight:bold;">B.S. Computer Science - 3.8 GPA</div>
 <div><i>California State University, Chico</i></div>
 
 <br>
