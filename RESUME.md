@@ -37,7 +37,7 @@ Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 <div style="float: right">May 2022 - August 2022</div><div style="font-weight: bold;">Software Development Intern</div>
 <div><i>Amazon, Seattle, WA</i></div>
 
-> - Scalable SaaS Application (E-Mail Distribution & Interface to Onboard Client E-Mail Templates)
+> - Scalable SaaS Application (Email Distribution & Interface to Onboard Client Email Templates)
 > - Pre-Production CI/CD Workflows
 
 ---
