@@ -57,7 +57,7 @@ jobs:
           name: pdf
           path: RESUME.pdf
           if-no-files-found: error
-      - uses: actions/github-script@v6
+      - uses: actions/github-script@v7
         name: Delete Previous Release
         continue-on-error: true
         with:
@@ -85,7 +85,7 @@ jobs:
             } catch (e) {
               console.log(e);
             }
-      - uses: actions/github-script@v6
+      - uses: actions/github-script@v7
         name: Create New Release
         with:
           script: |
