@@ -11,13 +11,6 @@ Cell: [(650) 868-7892](tel:+16508687892) &emsp; Email: [mail@maxkapral.com](mail
 <div style="float:right;">Graduated December 2023</div><div style="font-weight:bold;">B.S. Computer Science - 3.8 GPA</div>
 <div><i>California State University, Chico</i></div>
 
-<br>
-
-<div class="online-only" style="float: right"><a href="https://github.com/Kapral67/Resume/releases/download/lorenzian/lorenzian.tar.gz">Download Source</a></div><div style="font-weight: bold;">Numerical & Parallel Programming Project</div>
-
-> - Designed and wrote a custom parallel/numerical program to detect [strange attractors](https://en.wikipedia.org/wiki/Attractor#Strange_attractor) from random initial conditions based on the [Lorenz attractor](https://en.wikipedia.org/wiki/Lorenz_system)
-> - Program was parallelized using a hybrid model of both [MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) and [OpenMP](https://en.wikipedia.org/wiki/OpenMP)
-
 ---
 
 ### Work Experience
@@ -42,6 +35,17 @@ Cell: [(650) 868-7892](tel:+16508687892) &emsp; Email: [mail@maxkapral.com](mail
 
 ---
 
+### Personal Projects (Check Out My GitHub Profile!)
+
+<div style="font-weight: bold;">FamilyDirectory</div>
+
+> - FullStack Application Consisting of AWS Backend and React Frontend
+> 	- Backend: [github.com/Kapral67/FamilyDirectory](https://github.com/Kapral67/FamilyDirectory)
+> 	- Frontend: [github.com/Kapral67/FamilyDirectoryUI](github.com/Kapral67/FamilyDirectoryUI)
+> - Reproducible via AWS CDK and Frontend is full CI/CD thanks to AWS Amplify
+
+---
+
 ### Proficient Skills
 
 - **Development Tools**: Docker, Git, Django
@@ -50,6 +54,4 @@ Cell: [(650) 868-7892](tel:+16508687892) &emsp; Email: [mail@maxkapral.com](mail
 
 - **.NET Tools**: Blazor WebAssembly (C#)
 
-- **Database Languages/Frameworks**: MariaDB, Postgres, mySQL, AWS DynamoDB (NoSQL), SQLite
-
-- **Programming Languages/Frameworks**: C/C++, OpenMP, MPI; Java; Python; C#; Unix Shell, sh, ash, bash, zsh
+- **Programming Languages/Frameworks**: C/C++, OpenMP, MPI; Java; Python; C#; Unix Shell, sh, ash, bash, zsh; MariaDB; Postgres; mySQL; AWS DynamoDB (NoSQL); SQLite
