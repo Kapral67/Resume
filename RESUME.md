@@ -35,14 +35,13 @@ Cell: [(650) 868-7892](tel:+16508687892) &emsp; Email: [mail@maxkapral.com](mail
 
 ---
 
-### Personal Projects (Check Out My GitHub Profile!)
+### Personal Project Highlight (Checkout My GitHub Profile For More!)
 
-<div style="font-weight: bold;">FamilyDirectory</div>
+#### FamilyDirectory
 
-> - FullStack Application Consisting of AWS Backend and React Frontend
-> 	- Backend: [github.com/Kapral67/FamilyDirectory](https://github.com/Kapral67/FamilyDirectory)
-> 	- Frontend: [github.com/Kapral67/FamilyDirectoryUI](github.com/Kapral67/FamilyDirectoryUI)
-> - Reproducible via AWS CDK and Frontend is full CI/CD thanks to AWS Amplify
+> - Fully Reproducible & Full-Stack Application For Managing Relationships and Contact Info of Large Families and Extended Families
+> 	- AWS Backend: [github.com/Kapral67/FamilyDirectory](https://github.com/Kapral67/FamilyDirectory)
+> 	- React Frontend: [github.com/Kapral67/FamilyDirectoryUI](github.com/Kapral67/FamilyDirectoryUI)
 
 ---
 
