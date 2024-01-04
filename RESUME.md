@@ -39,18 +39,14 @@ Cell: [(650) 868-7892](tel:+16508687892) &emsp; Email: [mail@maxkapral.com](mail
 
 #### FamilyDirectory
 
-> - Fully Reproducible & Full-Stack Application For Managing Relationships and Contact Info of Large Families and Extended Families
+> - Fully Reproducible, FullStack App For Managing Familial Relationships and Contact Info
 > 	- AWS Backend: [github.com/Kapral67/FamilyDirectory](https://github.com/Kapral67/FamilyDirectory)
 > 	- React Frontend: [github.com/Kapral67/FamilyDirectoryUI](github.com/Kapral67/FamilyDirectoryUI)
 
 ---
 
-### Proficient Skills
+### Knowledgebase
 
-- **Development Tools**: Docker, Git, Django
-
+- **Development Tools**: Docker, Git
 - **AWS Tools**: CloudFormation (AWS CDK), DynamoDB, EventBridge, Lambda, S3, SES, Cognito, Amplify, ApiGateway
-
-- **.NET Tools**: Blazor WebAssembly (C#)
-
-- **Programming Languages/Frameworks**: C/C++, OpenMP, MPI; Java; Python; C#; Unix Shell, sh, ash, bash, zsh; MariaDB; Postgres; mySQL; AWS DynamoDB (NoSQL); SQLite
+- **Programming Languages/Frameworks**: C/C++, OpenMP, MPI; Java; Python, Django; C#, .NET Blazor WebAssembly; Javascript, React; Unix Shell, sh, bash, zsh; MariaDB; Postgres; mySQL; AWS DynamoDB (NoSQL); SQLite
