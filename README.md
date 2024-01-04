@@ -1,6 +1,9 @@
 # Resume
 
-My personal resume.
+Personal Resume Generator.
 
-&emsp; Accessible at https://www.maxkapral.com
+Creates the Website (GitHub Pages), Website Content (HTML) and a Downloadable PDF Copy of my Resume from markdown.
 
+Powered by GitHub Actions.
+
+[maxkapral.com](https://www.maxkapral.com)
