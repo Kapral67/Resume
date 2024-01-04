@@ -2,13 +2,13 @@
 
 ## Maxwell Kapral
 
-Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail@maxkapral.com)	GitHub: [Kapral67](https://github.com/Kapral67)
+Cell: [(650) 868-7892](tel:+16508687892) &emsp; Email: [mail@maxkapral.com](mailto:mail@maxkapral.com) &emsp; GitHub: [Kapral67](https://github.com/Kapral67)
 
 ---
 
 ### Education
 
-<div style="float:right;">Graduate December 2023</div><div style="font-weight:bold;">B.S. Computer Science - 3.8 GPA</div>
+<div style="float:right;">Graduated December 2023</div><div style="font-weight:bold;">B.S. Computer Science - 3.8 GPA</div>
 <div><i>California State University, Chico</i></div>
 
 <br>
@@ -46,10 +46,10 @@ Cell: [(650) 868-7892](tel:+16508687892)	Email: [mail@maxkapral.com](mailto:mail
 
 - **Development Tools**: Docker, Git, Django
 
-- **AWS Tools**: CloudFormation, CloudWatch, DynamoDB, EventBridge, Lambda, S3
+- **AWS Tools**: CloudFormation (AWS CDK), DynamoDB, EventBridge, Lambda, S3, SES, Cognito, Amplify, ApiGateway
 
-- **.NET Tools**: Blazor WebAssembly
+- **.NET Tools**: Blazor WebAssembly (C#)
 
-- **Database Languages/Frameworks**: OpenMP, MPI, MariaDB, Postgres, mySQL, AWS DynamoDB (NoSQL), SQLite
+- **Database Languages/Frameworks**: MariaDB, Postgres, mySQL, AWS DynamoDB (NoSQL), SQLite
 
-- **Programming Languages**: C/C++, Java, Python, C#, Unix Shell (sh, ash, bash, zsh)
+- **Programming Languages/Frameworks**: C/C++, OpenMP, MPI; Java; Python; C#; Unix Shell, sh, ash, bash, zsh
