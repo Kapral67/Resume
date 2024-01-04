@@ -31,7 +31,7 @@ jobs:
           extend_default_theme: true
           input_path: RESUME.md
           output_dir: /
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         name: Upload HTML Artifact
         with:
           name: html
@@ -51,7 +51,7 @@ jobs:
           extend_default_theme: true
           input_path: RESUME.md
           output_dir: /
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         name: Upload PDF Artifact
         with:
           name: pdf
