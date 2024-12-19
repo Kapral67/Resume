@@ -20,7 +20,7 @@ jobs:
           DEBIAN_FRONTEND=noninteractive sudo apt-get -y --no-install-recommends install \
             sed
       - uses: actions/checkout@v4
-      - uses: baileyjm02/markdown-to-pdf@v1
+      - uses: baileyjm02/markdown-to-pdf@v2
         name: Convert RESUME to HTML
         with:
           build_pdf: false
@@ -40,7 +40,7 @@ jobs:
       - name: Custom PDF Header
         run: |
           sed -i '1s|.*|<div style="float:right">Checkout Links and Updates at <a href="https://www.maxkapral.com">maxkapral.com</a></div>|' RESUME.md
-      - uses: baileyjm02/markdown-to-pdf@v1
+      - uses: baileyjm02/markdown-to-pdf@v2
         name: Convert RESUME to PDF
         with:
           build_pdf: true
