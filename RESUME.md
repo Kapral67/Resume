@@ -40,7 +40,7 @@ Mobile: [(650) 868-7892](tel:+16508687892) &emsp; Email: [mail@maxkapral.com](ma
 
 > - Fully Reproducible, FullStack App For Managing Ancestry/Family Relationships and Contact Info
 > 	- AWS Backend: [github.com/Kapral67/FamilyDirectory](https://github.com/Kapral67/FamilyDirectory)
-> 	- React Frontend: [github.com/Kapral67/FamilyDirectoryUI](github.com/Kapral67/FamilyDirectoryUI)
+> 	- React Frontend: [github.com/Kapral67/FamilyDirectoryUI](https://github.com/Kapral67/FamilyDirectoryUI)
 
 ---
 
