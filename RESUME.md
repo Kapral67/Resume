@@ -2,7 +2,7 @@
 
 ## Maxwell Kapral
 
-Mobile: [(650) 868-7892](tel:+16508687892) &emsp; Email: [mail@maxkapral.com](mailto:mail@maxkapral.com) &emsp; GitHub: [Kapral67](https://github.com/Kapral67)
+Email: [info@maxkapral.com](mailto:info@maxkapral.com) &emsp; GitHub: [Kapral67](https://github.com/Kapral67)
 
 ---
 
